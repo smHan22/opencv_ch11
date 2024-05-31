@@ -1,5 +1,5 @@
-/*ÄÄÇ»ÅÍ ºñÀü ch 11-2*/
-/*½Ç½À°úÁ¦ 1*/
+/*ì»´í“¨í„° ë¹„ì „ ch 11-2*/
+/*ì‹¤ìŠµê³¼ì œ 1*/
 /*
 #include <iostream>
 #include <opencv2/opencv.hpp>
@@ -15,7 +15,7 @@ int main() {
 	cout << "MORPH_ELLIPSE" << "\n" << img3 << endl;
 }*/
 
-// ½Ç½À°úÁ¦ 2
+// ì‹¤ìŠµê³¼ì œ 2
 
 #include <iostream>
 #include <opencv2/opencv.hpp>
@@ -39,7 +39,7 @@ int main() {
 	return 0;
 }
 
-// ½Ç½À°úÁ¦ 3
+// ì‹¤ìŠµê³¼ì œ 3
 /*
 #include <iostream>
 #include <opencv2/opencv.hpp>
@@ -60,7 +60,7 @@ int main() {
 	return 0;
 }*/
 
-// ½Ç½À°úÁ¦ 4
+// ì‹¤ìŠµê³¼ì œ 4
 /*
 #include <iostream>
 #include <opencv2/opencv.hpp>
@@ -77,16 +77,16 @@ int main() {
 	blur(gray, blurr, Size(5, 5));
 	Sobel(blurr, dx, CV_32FC1, 1, 0);
 	dx.convertTo(dx, CV_8UC1);
-	imshow("xÃà¹æÇâ ¼Òº§", dx);
+	imshow("xì¶•ë°©í–¥ ì†Œë²¨", dx);
 
 	Mat bin;
 	threshold(dx, bin, 100, 255, THRESH_BINARY);
-	imshow("ÀÌÁøÈ­ ¿µ»ó", bin);
+	imshow("ì´ì§„í™” ì˜ìƒ", bin);
 	?
 	Mat close;
 	morphologyEx(bin, close, MORPH_CLOSE, Mat(Size(21, 5), CV_8UC1));
 	?
-	imshow("´İÈû ¿¬»ê", close);
+	imshow("ë‹«í˜ ì—°ì‚°", close);
 	waitKey();
 	return 0;	?
 }*/
